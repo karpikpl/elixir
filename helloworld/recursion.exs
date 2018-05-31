@@ -4,11 +4,13 @@
 ## outputs: head: a, tail bc
 
 defmodule Language do
+  # recursive case
   def print_list([head | tail]) do
     IO.puts head
     print_list(tail)
   end
 
+  # terminating scenario
   def print_list([]) do
   end
 end
